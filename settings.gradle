@@ -1,0 +1,8 @@
+rootProject.name = 'multiprocess_applications'
+include 'simple_web_server'
+include 'sockets'
+include 'simple_web_server:rmi'
+findProject(':simple_web_server:rmi')?.name = 'rmi'
+include 'GRPC'
+include 'Process'
+
